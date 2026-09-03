@@ -1,0 +1,12 @@
+# Global constants
+forecast:
+  jumpoff: 2025
+  target: 2050
+  h: 25
+simulations:
+  nsim: 2000
+# figure specifications
+figspec:
+  dimensions: { width: 180 }
+  colors:
+    sex: { 'Male': '#004b87', 'Female': '#c60c30' }
