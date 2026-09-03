@@ -19,7 +19,7 @@ paths$input <- list(
   )
 )
 paths$output <- list(
-  finish_asfrs.csv = "./dat/fertility/finish_asfrs.csv"
+  finnish_asfrs.csv = "./dat/fertility/finnish_asfrs.csv"
 )
 
 # constants specific to this analysis
@@ -30,7 +30,7 @@ cnst <- within(list(), {
 
 # Download data -----------------------------------------------------------
 
-finish_asfrs <-
+finnish_asfrs <-
   pxweb_get_data(
   url = paths$input$statfinurl,
   query = list(
@@ -49,4 +49,4 @@ finish_asfrs <-
 # Export ------------------------------------------------------------------
 
 # export results of analysis
-write_csv(finish_asfrs, file = paths$output$finish_asfrs.csv)
+write_csv(finnish_asfrs, file = paths$output$finnish_asfrs.csv)
