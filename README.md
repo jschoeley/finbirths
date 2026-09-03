@@ -7,3 +7,12 @@ Mikko Myrskylä [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orci
 
 Stochastic population projections based on the assumption of slowing fertility postponement.
 
+# Repository guidelines
+
+Place downloaded or otherwise acquired data in `dat/`. Don't use `dat/` for derived data. Use `out/` for any persistent output of your scripts, e.g. plots, derived data, tables. Use `tmp/` for disposable output.
+
+Place scripts in `src` within the respective domain folder, fertility, mortality, migration, or population. Place code which is relevant for all domains in `src/_global_objects.R`.
+
+This repository uses renv for package management. Declare package dependencies explicitly in `_install_dependencies.R`.
+
+Constants which are reused across scripts go into `cfg/config.yaml`.
