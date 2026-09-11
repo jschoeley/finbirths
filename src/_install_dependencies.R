@@ -15,7 +15,8 @@ cran <- c(
   "readr",
   "ggplot2",
   "svglite",
-  "pxweb"
+  "pxweb",
+  "quadprog"
 )
 
 # define packages to install from github

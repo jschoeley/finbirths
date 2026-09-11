@@ -3,6 +3,12 @@ forecast:
   jumpoff: 2025
   target: 2050
   h: 25
+  target_tfr: 1.45
+  target_mab: 33
+  wlast: 5
+  asfr_growth_rate: 0.3
+  timestep_of_steepest_growth: 12
+  timestep_of_target_year: 25
 simulations:
   nsim: 2000
 # figure specifications
